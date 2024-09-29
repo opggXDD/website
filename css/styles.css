@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #c89800; /* Gold color to match Expo Dubai */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align logo and text */
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo height */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0px; /* Space between logo and text */
+}
+
+.nav-item {
+    margin-right: 5px; /* Add space between the nav items */
+}
+
+.navbar-toggler {
+    display: none; /* Remove toggle button */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333 !important; /* Darker hover color */
+}
+
+.navbar-nav {
+    float: right; /* Aligns nav items to the right */
+}
+
+/* Footer */
+footer {
+    background-color: #c89800;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* Overlay for text and button */
+.slideshow-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4); /* White background with 70% opacity */
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 20; /* Ensure it's above the images */
+}
+
+/* Styling for the heading text */
+.slideshow-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black; /* Solid black text with no opacity */
+    margin: 0;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* White background with slight opacity */
+    color: black; /* Solid black text */
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #c89800; /* Color change on hover */
+    color: white;
+}
+
+/* Arrows for navigation */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent for arrows */
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* What We Offer Section */
+.offer-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.offer-item {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+     margin-right: 3%;
+    margin-left: 3%
+}
+
+.offer-item:hover {
+    transform: scale(1.05); /* Cool hover effect */
+}
+
+.offer-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.offer-content h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    z-index: 10;
+    background-color: white; /* Dark background behind the text */
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.offer-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.offer-content img:hover {
+    opacity: 0.8; /* Cool effect on hover */
+}
+
+/* Spacing between images */
+.offer-item:not(:last-child) {
+    margin-right: 3%;
+}   
